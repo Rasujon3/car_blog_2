@@ -775,7 +775,7 @@
                 >
                   <div class="row">
                     <div class="form-group col-md-6 mb-4">
-                      <label>first name</label>
+                      <label>Name</label>
                       <input
                         type="text"
                         name="name"
@@ -788,15 +788,16 @@
                     </div>
 
                     <div class="form-group col-md-6 mb-4">
-                      <label>last name</label>
-                      <input
-                        type="text"
-                        name="name"
+                      <label>Select Branch</label>
+                      <select
+                        name="branch_id"
+                        id="branchSelect"
                         class="form-control"
-                        id="lname"
-                        placeholder="Enter Your Name"
                         required
-                      />
+                      >
+                        <option value="">Select a Branch</option>
+                        <!-- options will be populated by JS -->
+                      </select>
                       <div class="help-block with-errors"></div>
                     </div>
 
@@ -1339,5 +1340,6 @@
     </script>
   </body>
 
+  <script src="./js/api/getMail.js"></script>
   <!-- Mirrored from html.awaikenthemes.com/novaride/light/contact.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 20 Mar 2025 08:45:11 GMT -->
 </html>
